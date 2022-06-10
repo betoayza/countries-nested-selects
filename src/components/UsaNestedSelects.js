@@ -8,7 +8,7 @@ const UsaNestedSelects = () => {
   
   return (
     <div>
-      <h1>Usa Nested Selects:</h1>
+      <h1>USA Nested Selects:</h1>
       <SelectTemplate
         title="State"
         url=""
