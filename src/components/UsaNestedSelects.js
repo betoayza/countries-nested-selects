@@ -2,25 +2,25 @@ import React, { useState } from "react";
 import SelectTemplate from "./SelectTemplate";
 
 const UsaNestedSelects = () => {
-  const [continent, setContinent] = useState("");
-  const [country, setCountry] = useState("");
-  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [town, setTown] = useState("");
+  const [suburb, setSuburb] = useState("");
   
   return (
     <div>
       <h1>USA Nested Selects:</h1>
       <SelectTemplate
-        title="continent"
+        title="estado"
         url=""
         handleChange={(e) => {
-          setContinent(e.target.value);
+          setState(e.target.value);
         }}
       />
-      {country && <SelectTemplate title="country" url="" handleChange={(e) => {setCountry(e.target.value);}} />}
-      {city && <SelectTemplate title="city" url="" handleChange={(e) => {setCity(e.target.value);}} />}
+      {town && <SelectTemplate title="municipios" url="" handleChange={(e) => {setTown(e.target.value);}} />}
+      {suburb && <SelectTemplate title="city" url="" handleChange={(e) => {setSuburb(e.target.value);}} />}
       <pre>
         <code>
-          {continent}-{country}-{city}
+          {state}-{town}-{suburb}
         </code>
       </pre>
     </div>   

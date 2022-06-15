@@ -10,6 +10,7 @@ const SelectTemplate = ({ title, url, handleChange }) => {
 
   let id = `select-${title}`;
   let label = title.charAt(0).toUpperCase() + title.slice(1);
+  let options=data.data.country[title];
 
   return (
     <>
