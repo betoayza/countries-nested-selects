@@ -1,10 +1,10 @@
 import './App.css';
-import UsaNestedSelects from './components/UsaNestedSelects'; 
+import MexicoNestedSelects from './components/MexicoNestedSelects'; 
 
 function App() {
   return (
     <div className="App">
-      <UsaNestedSelects />
+      <MexicoNestedSelects />
     </div>
   );
 }
